@@ -5,12 +5,10 @@
 </head>
 <body>
 <form action="/userbanklist" method="get">
-    <input type="text"  name="richestUser" value="richest user">
-    <input type="submit">
+    <input type="submit"  name="richestUser" value="richest user">
 </form>
 <form action="/userbanklist" method="get">
-    <input type="text"  name="accountsSum" value="accounts sum">
-    <input type="submit" >
+    <input type="submit"  name="accountsSum" value="accounts sum">
 </form>
 </body>
 </html>

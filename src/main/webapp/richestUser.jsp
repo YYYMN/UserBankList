@@ -5,6 +5,6 @@
     <title>Richest User</title>
 </head>
 <body>
-<c:out value="${richestUser}"/>
+Richest user is : <c:out value="${richestUser}"/>
 </body>
 </html>

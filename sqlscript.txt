@@ -1,0 +1,41 @@
+
+
+CREATE TABLE user (
+user_id INT PRIMARY KEY AUTO_INCREMENT,
+name VARCHAR(45),
+surname VARCHAR(45)
+);
+
+INSERT INTO user(name, surname)
+VALUES 
+('Максим','Иванов'),
+('Денис', 'Петров'),
+('Александр', 'Жнай'),
+('Сергей', 'Бабицкий'),
+('Иван', 'Кирсанов'),
+('Александр', 'Тарасевич'),
+('Кристина', 'Чепорук'),
+('Ольга', 'Жарикова'),
+('Игорь', 'Семенов'),
+('Евгений', 'Чеканович');
+
+
+
+CREATE TABLE account (
+account_id INT PRIMARY KEY AUTO_INCREMENT,
+account INT,
+user_id INT,
+FOREIGN KEY (user_id) REFERENCES user (user_id));
+
+INSERT INTO account(account, user_id) 
+VALUES 
+(1000, 1),
+(2000, 2),
+(3000, 3),
+(1000, 4),
+(15600, 5),
+(3000, 6),
+(1000, 7),
+(2000, 8),
+(3000, 9),
+(4000, 10);

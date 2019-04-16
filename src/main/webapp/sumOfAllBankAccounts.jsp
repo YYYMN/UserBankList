@@ -5,6 +5,6 @@
     <title>Sum Of All Bank Accounts</title>
 </head>
 <body>
-<c:out value="${sumOfAllBankAccounts}"/>
+Accounts sum is : <c:out value="${sumOfAllBankAccounts}"/>
 </body>
 </html>

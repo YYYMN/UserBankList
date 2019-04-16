@@ -10,7 +10,6 @@
     <packaging>war</packaging>
 
 
-
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
@@ -33,12 +32,15 @@
             <artifactId>mysql-connector-java</artifactId>
             <version>8.0.15</version>
         </dependency>
-
-
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.16</version>
+        </dependency>
     </dependencies>
 
     <build>
-        <finalName>MyWebApp</finalName>
+        <finalName>UserBankList</finalName>
         <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
             <plugins>
                 <plugin>
