@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <form action="richestUser" method="post">
+        <input type="submit" name="richestUser" value="Richest user">
+    </form>
+</div>
+<div>
+    <form action="sumAccounts" method="get">
+        <input type="submit" name="sumAccounts" value="Sum Of Accounts">
+    </form>
+</div>
+
+<div>
+    {{#users}}
+        <div>
+            <span>{{id}}</span>
+            <span>{{name}}</span>
+            <span>{{surname}}</span>
+        </div>
+    {{/users}}
+</div>
+
+
+</body>
+</html>

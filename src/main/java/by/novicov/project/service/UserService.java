@@ -1,11 +1,13 @@
 package by.novicov.project.service;
 
-import by.novicov.project.entity.User;
+import by.novicov.project.model.User;
 
 import java.util.List;
 
 public interface UserService {
-    User getById(int id);
-    List<User> getAllUsers();
-    User getRichestUser();
+    User getById(Long id);
+    void save(User user);
+    void delete(Long id);
+    List<User> getAll();
+    List<User> getRichestUser();
 }
